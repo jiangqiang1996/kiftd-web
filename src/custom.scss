@@ -1,2 +1,39 @@
-@import 'node_modules/bootstrap/scss//bootstrap.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+@media (max-width: 766.98px) {
+	.xy-md-none {
+		//小于md 不显示
+		display: none !important;
+	}
+}
+@media (max-width: 575.98px) {
+	.xy-sm-none {
+		//小于sm 不显示
+		display: none !important;
+	}
+}
+.too-long-150 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 150px;
+}
+
+div:focus,th:focus,
+tr:focus,td:focus,
+.btn:focus,	/*清除btn按钮点击出现的边框*/
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.form-control:focus {
+	/*清除input框focus出现的边框*/
+	border-color: #fff;
+	webkit-box-shadow: none;
+	box-shadow: none;
+}
